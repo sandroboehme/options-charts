@@ -1,4 +1,3 @@
 plotly
 pandas
 jupyterlab
-jupyter-dash
