@@ -7,6 +7,7 @@ It's certainly not perfect from reusability, naming consistency or other aspects
 The basic idea is, that you:
 1. take the `instruments.ipynb` to select an instrument, then
 2. find some strikes that have enough trades before the selected expiry (data might be downloaded automagically if they aren't there yet)
+   1. It's probably a good idea to select strikes that all have data close to expiry or otherwise you won't see the end of the story in the chart. 
 3. copy one of the notebooks if you want
 4. enter/change the expiry and strikes in the config obj, run the Notebook and check out the charts.
 For the charts I used Plotly. This means, if you drag the mouse horizontally, vertically or in a rectangle, you can drill into some areas.
