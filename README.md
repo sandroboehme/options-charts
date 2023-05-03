@@ -6,11 +6,13 @@ It's certainly not perfect from reusability, naming consistency or other aspects
 
 The basic idea is, that you:
 1. take the `instruments.ipynb` to select an instrument, then
-2. choose some strikes that have enough trades before the selected expiry
-3. copy one of the notebooks
-4. enter the expiry and strikes to the config obj, run the Notebook and check out the charts.
+2. find some strikes that have enough trades before the selected expiry (data might be downloaded automagically if they aren't there yet)
+3. copy one of the notebooks if you want
+4. enter/change the expiry and strikes in the config obj, run the Notebook and check out the charts.
 For the charts I used Plotly. This means, if you drag the mouse horizontally, vertically or in a rectangle, you can drill into some areas.
-You can also hide some plots by clickin on the corresponding legend entry.
+You can also hide some plots by clicking on the corresponding legend entry.
+
+If you neeed newer Bitcoin data, just run the 'readBitstampBTCdata.ipynb` notebook
 
 ## Requirements
 Python 3
