@@ -2,7 +2,7 @@
 
 This repo crunshes some data to visualize the behavior of options in comparison to Bitcoin.
 If you find bugs, I'd be happy to get to know them ;)!
-It's certainly not perfect form reusability, naming consistency or other aspects.
+It's certainly not perfect from reusability, naming consistency or other aspects.
 
 The basic idea is, that you:
 1. take the `instruments.ipynb` to select an instrument, then
@@ -25,17 +25,12 @@ virtualenv --python python3 env
 virtualenv --python=/usr/local/bin/python3.9 env
 
 source env/bin/activate
-pip3 install -r requirements.txt
+c
 ```
 
 ## Run
 ``` 
 jupyter lab
-```
-
-## Open the Notebook
-```
-option_prices.ipynb
 ```
 
 ## Exit virtualenv
