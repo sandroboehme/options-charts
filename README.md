@@ -24,6 +24,8 @@ The Bitcoin price / value is always in gold / black.
 If you neeed newer Bitcoin data, just run the 'readBitstampBTCdata.ipynb` notebook.
 The options data will be downloaded automagically from Deribit if you have choosen an expiration or strike that isn't there yet.
 
+I'm happy to accept PRs for using colors with a better contrast ;-)
+
 ## Requirements
 Python 3
 Virtualenv
