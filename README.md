@@ -19,7 +19,7 @@ For the charts I used Plotly which has some nice interactive features:
 2. you can click on legend entries to hide the corresponding plots
 3. you can double click on legend entries to show exclusively those corresponding plots
 
-The Bitcoin price / value is always in gold and black.
+The Bitcoin price / value is always in gold / black.
 
 If you neeed newer Bitcoin data, just run the 'readBitstampBTCdata.ipynb` notebook.
 The options data will be downloaded automagically from Deribit if you have choosen an expiration or strike that isn't there yet.
