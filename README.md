@@ -1,17 +1,23 @@
 # Option Charts
 
-This repo crunshes some data to visualize the behavior of options in comparison to Bitcoin.
-If you find bugs, I'd be happy to get to know them ;)!
+This repo crunches some data to visualize the behavior of options in comparison to Bitcoin.
+If you find bugs, I'd be happy to get to know them personally ;)!
 It's certainly not perfect from reusability, naming consistency or other aspects.
 
 The basic idea is, that you:
-1. take the `instruments.ipynb` to select an instrument, then
-2. find some strikes that have enough trades before the selected expiry (data might be downloaded automagically if they aren't there yet)
-   1. It's probably a good idea to select strikes that all have data close to expiry or otherwise you won't see the end of the story in the chart. 
-3. copy one of the notebooks if you want
-4. enter/change the expiry and strikes in the config obj, run the Notebook and check out the charts.
-For the charts I used Plotly. This means, if you drag the mouse horizontally, vertically or in a rectangle, you can drill into some areas.
-You can also hide some plots by clicking on the corresponding legend entry.
+1. take the `instruments.ipynb` to set an expiration and copy the strikes, then
+2. duplicate a notebook and insert the expiration and strikes.
+3. After that you can check if the plots are overlaying too much.
+   1. If they do, check the surface charts to see which strikes have the least data
+   2. remove those strikes from the config and rerun the notebook.
+   3. Refine the charts by repeating the process.
+4. Make sure to understand which charts contain interpolated data and which don't.
+5. Check if that all makes sense to you or not. I'd be happy if you share your thoughts!
+
+For the charts I used Plotly which has some nice interactive features: 
+1. if you drag the mouse horizontally, vertically or in a rectangle, you can drill down into some areas.
+2. you can click on legend entries to hide the corresponding plots
+3. you can double click on legend entries to show exclusively those corresponding plots
 
 If you neeed newer Bitcoin data, just run the 'readBitstampBTCdata.ipynb` notebook
 
@@ -28,7 +34,7 @@ virtualenv --python python3 env
 virtualenv --python=/usr/local/bin/python3.9 env
 
 source env/bin/activate
-c
+pip3 install -r requirements.txt
 ```
 
 ## Run
